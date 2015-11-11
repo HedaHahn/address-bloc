@@ -1,4 +1,4 @@
-require_relative 'entry'
+require_relative 'entry.rb'
 
 class AddressBook
   attr_accessor :entries
@@ -8,7 +8,17 @@ class AddressBook
      @entries = []
    end
 
-   def add_entry(name, phone_number, email)
+   def remove_entry(name, phone, email)
+     delete_entry = nil
+     @entries.each do |entry|
+   end
+
+   @entries.delete(delete_entry)
+
+ end
+
+
+ def add_entry(name, phone_number, email)
 
      index = 0
      @entries.each do |entry|
