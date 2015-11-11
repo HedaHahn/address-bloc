@@ -1,4 +1,4 @@
-require_relative 'controllers/menu_controller'
+srequire_relative 'controllers/menu_controller'
 
  menu = MenuController.new
 
@@ -6,4 +6,3 @@ require_relative 'controllers/menu_controller'
  puts "Welcome to AddressBloc!"
 
  menu.main_menu
- 
