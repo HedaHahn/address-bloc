@@ -68,7 +68,6 @@ require_relative '../models/address_book'
         puts "#{{selection}} is not a valid input"
         entry_n_submenu
       end
-
    end
 
  # #10
