@@ -1,20 +1,22 @@
 require_relative 'entry.rb'
+require "csv"
 
 class AddressBook
   attr_accessor :entries
-
 
   def initialize
      @entries = []
    end
 
-   def remove_entry(name, phone, email)
+  def remove_entry(name, phone_number, email)
      delete_entry = nil
      @entries.each do |entry|
+       if name == entry.name && entry.phone_number && entry.email
+         delete_entry = entry
+       end
    end
 
    @entries.delete(delete_entry)
-
  end
 
 
@@ -30,6 +32,10 @@ class AddressBook
      end
 
      @entries.insert(index, Entry.new(name, phone_number, email))
+   end
+
+   def import_from_csv(file_name)
+     # Implementation goes here
    end
 
 end
