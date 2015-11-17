@@ -20,10 +20,7 @@ require_relative '../models/address_book'
 
      selection = gets.to_i
 
-   end
- end
-
- case selection
+     case selection
      when 1
        system "clear"
        view_all_entries
@@ -65,10 +62,9 @@ require_relative '../models/address_book'
         gets.chomp
         system "clear"
       else
-        puts "#{{selection}} is not a valid input"
+        puts "#{selection} is not a valid input"
         entry_n_submenu
       end
-
    end
 
  # #10
